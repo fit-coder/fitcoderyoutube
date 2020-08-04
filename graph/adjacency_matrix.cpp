@@ -12,10 +12,7 @@ void addEdge(int graph[][V], int u, int v)
 
 int main()
 {
-    int graph[V][V];
-    for (int i=0; i < V; i++)
-        for (int j=0; j < V; j++)
-            graph[i][j] = 0;
+    int graph[V][V] = {0};
 
     addEdge(graph, 0, 1);
     addEdge(graph, 0, 4);
