@@ -10,17 +10,17 @@ vector<int> dijkstra(vector<vector<pair<int,int>>> graph, int start)
 {
     vector<int> dist(graph.size(), INT_MAX);
 
-    // <vertex, weight> pair. First element of priority queue will be the minimum
+    // <weight, vertex> pair. First element of priority queue will be the minimum
     priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
 
     // Add start to pq, where distance is 0
-    pq.push(make_pair(start, 0));
+    pq.push(make_pair(0, start));
     dist[start] = 0;
 
     while(!pq.empty())
     {
         // Get min distance vertex from pq
-        int u = pq.top().first;
+        int u = pq.top().second;
         pq.pop();
 
         for(int i = 0; i < graph[u].size(); i++)
@@ -32,7 +32,7 @@ vector<int> dijkstra(vector<vector<pair<int,int>>> graph, int start)
             if (dist[v] > dist[u] + weight)
             {
                 dist[v] = dist[u] + weight;
-                pq.push(make_pair(v, dist[v]));
+                pq.push(make_pair(dist[v], v));
             }
         }
     }
