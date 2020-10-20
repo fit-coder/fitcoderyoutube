@@ -23,7 +23,7 @@ vector<int> topological_sort(vector<int> graph[], int size)
     for (int i=0; i < indegree.size(); i++)
     {
         if (indegree[i] == 0)
-           q.push(indegree[i]);
+           q.push(i);
     }
     while (!q.empty())
     {
