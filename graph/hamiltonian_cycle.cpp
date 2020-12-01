@@ -1,4 +1,9 @@
-// Check if hamiltonian cycle is present or not
+/*
+** Check if hamiltonian cycle is present or not
+** For video explanation, please refer to my Youtube channel in the link below:
+** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Please subscribe if you like the content
+*/
 
 #include <iostream>
 #include <vector>

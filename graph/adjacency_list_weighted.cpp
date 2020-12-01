@@ -1,4 +1,9 @@
-// Print adjacency list for a weighted graph
+/*
+** Print adjacency list for a weighted graph
+** For video explanation, please refer to my Youtube channel in the link below:
+** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Please subscribe if you like the content
+*/
 
 #include <iostream>
 #include <vector>
