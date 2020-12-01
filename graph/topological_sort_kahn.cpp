@@ -1,4 +1,9 @@
-// Topological sort using modified DFS for a directed acyclic graph
+/*
+** Topological sort using modified DFS for a directed acyclic graph
+** For video explanation, please refer to my Youtube channel in the link below:
+** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Please subscribe if you like the content
+*/
 
 #include <iostream>
 #include <vector>

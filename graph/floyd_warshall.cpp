@@ -1,7 +1,13 @@
-// Floyd warshall algorithm for all pairs shortest distance
+/*
+** Floyd warshall algorithm for all pairs shortest distance
+** For video explanation, please refer to my Youtube channel in the link below:
+** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Please subscribe if you like the content
+*/
 
 #include <iostream>
 #include <vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
