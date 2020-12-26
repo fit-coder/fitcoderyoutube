@@ -7,13 +7,13 @@
 #include <iostream>
 using namespace std;
 
-struct Node
+struct TreeNode
 {
     char val;
-    Node* left;
-    Node* right;
+    TreeNode* left;
+    TreeNode* right;
 
-    Node(char data)
+    TreeNode(char data)
     {
         val = data;
         left = NULL;
@@ -23,13 +23,13 @@ struct Node
 
 int main()
 {
-    Node* root = new Node('M');
-    root->left = new Node('P');
-    root->right = new Node('Q');
-    root->left->left = new Node('A');
-    root->left->right = new Node('D');
-    root->right->left = new Node('B');
-    root->right->right = new Node('C');
-    root->right->right->right = new Node('W');
+    TreeNode* root = new TreeNode('M');
+    root->left = new TreeNode('P');
+    root->right = new TreeNode('Q');
+    root->left->left = new TreeNode('A');
+    root->left->right = new TreeNode('D');
+    root->right->left = new TreeNode('B');
+    root->right->right = new TreeNode('C');
+    root->right->right->right = new TreeNode('W');
     return 0;
 }
