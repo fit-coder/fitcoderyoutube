@@ -1,9 +1,12 @@
 /*
+** @Author: Sandeep Thapar
+**
 ** Binary Tree Preorder Traversal - iterative version
 **
 ** For video explanation, please refer to my Youtube channel in the link below:
 ** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
-** Please subscribe if you like the content
+**
+** Please subscribe to the channel if you find this helpful
 */
 
 #include <iostream>
