@@ -46,7 +46,7 @@ void preorder_traversal(TreeNode *node)
     preorder_traversal(node->right);
 }
 
-TreeNode* construct_tree(vector<char>& inorder, vector<char>& preorder,
+TreeNode* construct_tree(vector<char>& preorder,
                          unordered_map<char,int>& inorderMap,
                          int& preIndex, int inStart, int inEnd)
 {
@@ -64,8 +64,8 @@ TreeNode* construct_tree(vector<char>& inorder, vector<char>& preorder,
     int inIndex = inorderMap[node->val];
     
     // Using index in inorder traversal, construct left and right subtrees
-    node->left = construct_tree(inorder, preorder, inorderMap, preIndex, inStart, inIndex - 1);
-    node->right = construct_tree(inorder, preorder, inorderMap, preIndex, inIndex + 1, inEnd);
+    node->left = construct_tree(preorder, inorderMap, preIndex, inStart, inIndex - 1);
+    node->right = construct_tree(preorder, inorderMap, preIndex, inIndex + 1, inEnd);
 
     return node;
 }
@@ -81,7 +81,7 @@ int main()
         inorderMap[inorder[i]] = i;
 
     int preIndex = 0;
-    TreeNode* root = construct_tree(inorder, preorder, inorderMap, preIndex, 0, inorder.size()-1);
+    TreeNode* root = construct_tree(preorder, inorderMap, preIndex, 0, inorder.size()-1);
     
     cout << "Tree constructed" << endl;
     cout << "Inorder traversal of the constructed tree: ";
