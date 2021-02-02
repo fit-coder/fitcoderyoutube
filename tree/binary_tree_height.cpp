@@ -78,5 +78,9 @@ int main()
     cout << "Height of the tree (recursive method): ";
     cout << height_recursive(root) << endl;
     cout << endl;
+
+    cout << "Height of the tree (iterative method): ";
+    cout << height_iterative(root) << endl;
+    cout << endl;
     return 0;
 }
