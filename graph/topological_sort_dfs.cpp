@@ -11,28 +11,30 @@
 
 #include <iostream>
 #include <vector>
+#include <list>
 
 using namespace std;
 
 void addEdge(vector<int> graph[], int u, int v) {
     graph[u].emplace_back(v);
-    graph[v].emplace_back(u);
 }
 
 void topological_sort(vector<int> graph[], vector<bool>& visited,
-                      vector<int>& result, int node)
+                      list<int>& result, int node)
 {
     visited[node] = true;
-    for (auto i = graph[node].begin(); i != graph[node].end(); i++) {
+    for (auto i = graph[node].begin(); i != graph[node].end(); i++)
+    {
         if (!visited[*i])
            topological_sort(graph, visited, result, *i);
     }
-    result.emplace_back(node);
+    result.push_front(node);
 }
 
 int main() {
-    vector<int> graph[5];
-    vector<bool> visited(5, false);
+    int V = 5;
+    vector<int> graph[V];
+    vector<bool> visited(V, false);
 
     addEdge(graph, 0, 1);
     addEdge(graph, 0, 2);
@@ -41,11 +43,13 @@ int main() {
     addEdge(graph, 2, 3);
     addEdge(graph, 2, 4);
     
-    vector<int> result ;
+    list<int> result ;
     cout << "Topological sort using DFS: " << endl;
-    topological_sort(graph, visited, result, 0);
-    for (int i=result.size()-1; i >= 0; i--)
-        cout << result[i] << " ";
+    for (int i=0; i < V; ++i)
+        if (!visited[i])
+           topological_sort(graph, visited, result, i);
+    for (auto i : result)
+       cout << i << " ";
     cout << endl;
 
     return 0;
