@@ -22,7 +22,7 @@ void addEdge(vector<int> graph[], int u, int v) {
 
 void dfs_iterative(vector<int> graph[], int start)
 {
-    vector<bool> visited(graph->size(), false);
+    vector<bool> visited(7, false);
     stack<int> st;
     st.push(start);
     visited[start] = true;
