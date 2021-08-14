@@ -34,7 +34,7 @@ void zigzag_levelorder_traversal_twostacks(TreeNode *root)
     st1.push(root);
     TreeNode *curr = NULL;
 
-    while (!st1.empty() || st2.empty())
+    while (!st1.empty() || !st2.empty())
     {
         while (!st1.empty())
         {
