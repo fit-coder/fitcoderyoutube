@@ -55,7 +55,7 @@ int main()
     root->right->left = new TreeNode(-7);
     root->right->left->right = new TreeNode(3);
 
-    res = 0;
+    res = INT_MIN;
     maxSum(root);
     cout << "Maximum Path Sum in Binary Tree: " << res << endl;
     return 0;
