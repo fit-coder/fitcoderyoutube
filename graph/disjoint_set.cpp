@@ -29,17 +29,16 @@ int find(vector<int>& parent, int x)
 
 void union_set(vector<int>& parent, vector<int>& rank, int x, int y)
 {
-    int rootX = find(parent, x);
-    int rootY = find(parent, y);
-    if (rootX == rootY)
-        return;
-    if (rank[rootX] > rank[rootY])
-        parent[rootY] = rootX;
+    if (rank[x] > rank[y])
+    {
+        parent[y] = x;
+        rank[x]++;
+    }
     else
     {
-        parent[rootX] = rootY;
-        if (rank[rootX] == rank[rootY])
-            rank[rootY]++;
+        parent[x] = y;
+        if (rank[x] == rank[y])
+            rank[y]++;
     }
 }
 
