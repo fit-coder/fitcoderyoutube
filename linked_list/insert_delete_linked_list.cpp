@@ -91,6 +91,8 @@ void deleteAtIndex(ListNode *&head, int index)
             return;
         prevNode = prevNode->next;
     }
+    if (prevNode->next == NULL)
+        return;
     ListNode *temp = prevNode->next;
     prevNode->next = prevNode->next->next;
     delete temp;
@@ -130,40 +132,40 @@ int main()
 {
     ListNode *head = NULL;
     insertAtBeginning(head, 'A');
-    printList(head);
+    printList(head); // A
 
     insertAtEnd(head, 'B');
-    printList(head);
+    printList(head); // A->B
     
     insertAtEnd(head, 'C');
-    printList(head);
+    printList(head); // A->B->C
     
     insertAtBeginning(head, 'D');
-    printList(head);
+    printList(head); // D->A->B->C
     
     insertAtBeginning(head, 'E');
-    printList(head);
+    printList(head); // E->D->A->B->C
     
     insertAtIndex(head, 2, 'F');
-    printList(head);
+    printList(head); // E->D->F->A->B->C
     
     deleteFromBeginning(head);
-    printList(head);
+    printList(head); // D->F->A->B->C
     
     deleteAtIndex(head, 2);
-    printList(head);
+    printList(head); // D->F->B->C
     
     deleteFromEnd(head);
-    printList(head);
+    printList(head); // D->F->B
     
     deleteAtIndex(head, 1);
-    printList(head);
+    printList(head); // D->B
     
     deleteAtIndex(head, 0);
-    printList(head);
+    printList(head); // B
     
     deleteAtIndex(head, 5);
-    printList(head);
+    printList(head); // B
 
     return 0;
 }
