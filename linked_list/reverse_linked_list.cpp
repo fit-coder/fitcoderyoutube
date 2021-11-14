@@ -4,6 +4,9 @@
 ** Reverse a singly linked list
 ** It can be done both iteratively and recursively.
 **
+** e.g Input: A->B->C->D->E
+** Output: E->D->C->B->A
+**
 ** For video explanation, please refer to my Youtube channel in the link below:
 ** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
 **

@@ -6,6 +6,9 @@
 ** and return the reversed list
 ** Constraint: 1 <= Left <= Right <= Number of nodes of the list
 **
+** e.g  Input: A->B->C->D->E->F->G->H, left=4, right=7
+** Output: A->B->C->G->F->E->D->H
+**
 ** For video explanation, please refer to my Youtube channel in the link below:
 ** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
 **
@@ -43,6 +46,8 @@ void printList(ListNode *head)
     cout << endl;
 }
 
+// reverse “count” nodes starting from head.
+// A->B->C->D->E->F->G. If C,3 is passed, function will reverse C->D->E and return {E,F}
 pair<ListNode*,ListNode*> reverse(ListNode* head, int count)
 {
     ListNode *prev = NULL;
