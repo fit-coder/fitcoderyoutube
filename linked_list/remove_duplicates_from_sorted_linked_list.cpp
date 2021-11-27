@@ -30,7 +30,7 @@ struct ListNode
     }
 };
 
-void insertAtBeginning(ListNode *&head, char data)
+void insertAtBeginning(ListNode *&head, int data)
 {
     ListNode *newNode = new ListNode(data);
     newNode->next = head;
