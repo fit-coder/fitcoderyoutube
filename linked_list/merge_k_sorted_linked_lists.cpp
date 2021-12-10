@@ -1,7 +1,7 @@
 /*
 ** @Author: Sandeep Thapar
 **
-** Given the heads of k sorted linked lists, merge the k lists into 1 sorted linked list
+** Given the heads of K sorted linked lists, merge the K lists into 1 sorted linked list
 ** and return its head.
 **
 ** e.g Input: head1 = 1->2->7->10
