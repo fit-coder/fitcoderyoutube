@@ -5,7 +5,7 @@
 ** Each of their nodes contains a single digit.
 ** Add the two numbers and return the sum as a linked list.
 **
-** Note: Two numbers do not contain any leading zero, except the number 0 itself.
+** Note: Two numbers do not contain any leading zero, except the number 0 itself
 **
 ** e.g Input: list1 = 9->9->7->4->3
 **            list2 = 8->7->5
