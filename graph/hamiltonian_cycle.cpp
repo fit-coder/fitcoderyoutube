@@ -68,9 +68,17 @@ int main()
     cout << "Hamiltonian Cycle: ";
     if (hamiltonianCycle(graph, visited, path, 0))
     {
-        for (int i : path)
-            cout << i << "  ";
-        cout << path[0] << endl;
+        int last = path.back();
+        vector<int>& v = graph[path[0]];
+        // check if first and last vertex are connected
+        if (std::find(v.begin(), v.end(), last) == v.end())
+            cout << "0" << endl;
+        else
+        {
+            for (int i : path)
+                cout << i << "  ";
+            cout << path[0] << endl;
+        }
     }
     else
         cout << "0" << endl;
