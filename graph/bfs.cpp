@@ -15,6 +15,8 @@
 
 using namespace std;
 
+int V = 7; // vertices
+
 void addEdge(vector<int> graph[], int u, int v) {
     graph[u].emplace_back(v);
     graph[v].emplace_back(u);
@@ -22,7 +24,7 @@ void addEdge(vector<int> graph[], int u, int v) {
 
 void bfs(vector<int> graph[], int start)
 {
-    vector<bool> visited(graph->size(), false);
+    vector<bool> visited(V, false);
     queue<int> q;
     q.push(start);
     visited[start] = true;
@@ -40,7 +42,6 @@ void bfs(vector<int> graph[], int start)
     }
 }
 int main() {
-    int V = 7; // vertices
     vector<int> graph[V];
 
     addEdge(graph, 0, 1);
