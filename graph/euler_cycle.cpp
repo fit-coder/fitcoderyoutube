@@ -4,7 +4,8 @@
 ** Check if euler path or cycle is present or not and if yes, print it
 **
 ** For video explanation, please refer to my Youtube channel in the link below:
-** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Channel: youtube.com/fitcoder
+** Graph Playlist: https://youtube.com/playlist?list=PLFj4kIJmwGu3m30HfYDDufr3PZBfyngr0
 **
 ** Please subscribe to the channel if you find this helpful
 */
@@ -22,7 +23,7 @@ void removeEdge(vector<int> graph[], int u, int v)
     vector<int>::iterator it;
     it = find(graph[v].begin(), graph[v].end(), u);
     *it = -1;
-	it = find(graph[u].begin(), graph[u].end(), v);
+    it = find(graph[u].begin(), graph[u].end(), v);
     *it = -1;
 }
 
@@ -56,7 +57,7 @@ int dfsCount(vector<int> graph[], int u, vector<bool>& visited)
 // 2.d) If count1 is greater, then edge (u, v) is a bridge
 bool isValidNextEdge(vector<int> graph[], int u, int v)
 {
-	int count = 0;
+    int count = 0;
     for (auto av : graph[u])
     {
         if (av != -1)
@@ -65,7 +66,7 @@ bool isValidNextEdge(vector<int> graph[], int u, int v)
     if (count == 0)
         return false;
     if (count == 1)
-	    return true;
+        return true;
 
     vector<bool> visited(V, false);
     int count1 = dfsCount(graph, u, visited);
@@ -82,7 +83,7 @@ bool isValidNextEdge(vector<int> graph[], int u, int v)
 
 void eulerCycle(vector<int> graph[], int u)
 {
-	vector<int>::iterator it;
+    vector<int>::iterator it;
     for (auto av : graph[u])
     {
         if (av != -1 && isValidNextEdge(graph, u, av))
@@ -108,7 +109,7 @@ bool isConnected(vector<int> graph[])
 
     // Find a vertex with non-zero degree
     int i = 0;
-	for (i = 0; i < V; i++)
+    for (i = 0; i < V; i++)
         if (graph[i].size() != 0)
             break;
 
@@ -160,18 +161,18 @@ int main()
     addEdge(graph, 1, 2);
     addEdge(graph, 3, 4);
 
-	int ret = isEulerian(graph);
-	if (ret == 0)
-	{
-		cout << "Graph is not Euerlian" << endl;
+    int ret = isEulerian(graph);
+    if (ret == 0)
+    {
+        cout << "Graph is not Euerlian" << endl;
         return 0;
     }
-	else if (ret == 1)
+    else if (ret == 1)
         cout << "Graph is Semi-Euerlian i.e has an Euler path" << endl;
-	else
+    else
         cout << "Graph is Euerlian i.e has a Euler circuit" << endl;
 
-	// Find a vertex with odd degree
+    // Find a vertex with odd degree
     int oddDegreeVertex = 0;
     for (int i = 0; i < V; ++i)
     {

@@ -11,8 +11,9 @@
 ** e.g Input: 5->6->9->1->4->3, x = 4
 ** Output: 1->3->5->6->9->4
 **
-** For video explanation, please refer to my Youtube channel (youtube.com/fitcoder) in the link below:
-** https://youtube.com/playlist?list=PLFj4kIJmwGu1oI1HVzAZlpJgKf9xv6mM1
+** For video explanation, please refer to my Youtube channel in the link below:
+** Channel: youtube.com/fitcoder
+** Linked List Playlist: https://youtube.com/playlist?list=PLFj4kIJmwGu1oI1HVzAZlpJgKf9xv6mM1
 **
 ** Please subscribe to the channel if you find this helpful
 */

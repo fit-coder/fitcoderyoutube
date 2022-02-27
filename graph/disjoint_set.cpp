@@ -4,7 +4,8 @@
 ** Detect cycle in graph using disjoint set data structure
 **
 ** For video explanation, please refer to my Youtube channel in the link below:
-** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Channel: youtube.com/fitcoder
+** Graph Playlist: https://youtube.com/playlist?list=PLFj4kIJmwGu3m30HfYDDufr3PZBfyngr0
 **
 ** Please subscribe to the channel if you find this helpful
 */

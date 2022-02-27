@@ -15,8 +15,9 @@
 ** e.g Input: A->B->C->D->E->F->G, K = 12
 ** Output: C->D->E->F->G->A->B
 **
-** For video explanation, please refer to my Youtube channel (Fit Coder) in the link below:
-** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** For video explanation, please refer to my Youtube channel in the link below:
+** Channel: youtube.com/fitcoder
+** Linked List Playlist: https://youtube.com/playlist?list=PLFj4kIJmwGu1oI1HVzAZlpJgKf9xv6mM1
 **
 ** Please subscribe to the channel if you find this helpful
 */

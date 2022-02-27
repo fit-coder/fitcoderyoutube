@@ -4,11 +4,12 @@
 ** Given the root of a binary tree, find the maximum path sum of any path
 **
 ** Path -> Sequence of nodes where each pair of adjacent nodes has an edge connecting them.
-** A node can only appear in the sequence at most once.
+** A node can only appear in the sequenceï¿½at most once.
 ** Path does not necessarily need to pass through root
 **
 ** For video explanation, please refer to my Youtube channel in the link below:
-** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Channel: youtube.com/fitcoder
+** Tree Playlist: https://www.youtube.com/playlist?list=PLFj4kIJmwGu2VDN0qKVMmCbEeGBEpXzkX
 **
 ** Please subscribe to the channel if you find this helpful
 */

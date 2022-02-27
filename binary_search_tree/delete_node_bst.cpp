@@ -4,7 +4,8 @@
 ** Delete a node from a binary search tree
 **
 ** For video explanation, please refer to my Youtube channel in the link below:
-** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Channel: youtube.com/fitcoder
+** BST Playlist: https://youtube.com/playlist?list=PLFj4kIJmwGu21Tv1mmsNFOf5pWUrSjr55
 **
 ** Please subscribe to the channel if you find this helpful
 */

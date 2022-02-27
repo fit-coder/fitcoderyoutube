@@ -11,7 +11,8 @@
 ** Output: 1->2->2->3->5->6->6->7->8->8->9->10->12->20
 **
 ** For video explanation, please refer to my Youtube channel in the link below:
-** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Channel: youtube.com/fitcoder
+** Linked List Playlist: https://youtube.com/playlist?list=PLFj4kIJmwGu1oI1HVzAZlpJgKf9xv6mM1
 **
 ** Please subscribe to the channel if you find this helpful
 */

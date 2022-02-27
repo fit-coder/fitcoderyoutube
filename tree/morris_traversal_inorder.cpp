@@ -4,7 +4,8 @@
 ** Morris (Inorder) Traversal for Binary Tree - without recursion and without stack
 **
 ** For video explanation, please refer to my Youtube channel in the link below:
-** https://www.youtube.com/channel/UCX6rLou1VXXPVsORMVkUryg/videos
+** Channel: youtube.com/fitcoder
+** Tree Playlist: https://www.youtube.com/playlist?list=PLFj4kIJmwGu2VDN0qKVMmCbEeGBEpXzkX
 **
 ** Please subscribe to the channel if you find this helpful
 */
