@@ -12,7 +12,7 @@
 **
 ** For video explanation, please refer to my Youtube channel in the link below:
 ** Channel: youtube.com/fitcoder
-** Sorting Playlist: 
+** Sorting Playlist: https://www.youtube.com/playlist?list=PLFj4kIJmwGu08Rq9e-ensRK5bFA2fVUhz
 **
 ** Please subscribe to the channel if you find this helpful
 */
