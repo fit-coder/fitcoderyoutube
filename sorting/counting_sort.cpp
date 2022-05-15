@@ -38,7 +38,7 @@ void counting_sort(vector<int> &vec)
 
     // Find the index of each element of the original array in count array, and
     // place the elements in output array
-    for (int i=0; i < size; ++i)
+    for (int i=size-1; i >= 0; --i)
     {
         output[count[vec[i]] - 1] = vec[i];
         --count[vec[i]];
